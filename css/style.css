@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/goku.jpg);
+    background-size: cover;
+     }
+
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.card{
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
