@@ -77,17 +77,17 @@ let plan3 = 300
        alert("Hasta la proxima guerrero Sayayin");
     }
     else if (celular === 3 && plan === 1){
-         alert("HUAWEI Mate 40 pro y el plan 1");
+         alert("Usted escogio el HUAWEI Mate 40 pro y el plan 1");
          alert("Su primer pago seria de $" + (huawei + plan1) + "\n 11 mensualidades de $" + plan1);
        alert("Hasta la proxima guerrero Sayayin");
     }
     else if (celular === 3 && plan === 2){
-        alert("HUAWEI Mate 40 pro y el plan 2");
+        alert("Usted escogio el HUAWEI Mate 40 pro y el plan 2");
         alert("Su primer pago seria de $" + (huawei + plan2) + "\n 11 mensualidades de $" + plan2);
        alert("Hasta la proxima guerrero Sayayin");
     }
     else if(celular === 3 && plan === 3){
-         alert("HUAWEI Mate 40 pro y el plan 3");
+         alert("Usted escogio el HUAWEI Mate 40 pro y el plan 3");
          alert("Su primer pago seria de $" + (huawei + plan3) + "\n 11 mensualidades de $" + plan3);
        alert("Hasta la proxima guerrero Sayayin");
     }
