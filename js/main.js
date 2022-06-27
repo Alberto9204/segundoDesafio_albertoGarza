@@ -7,6 +7,8 @@ let saludo = mostrarSaludo();
 let productos = mensajes();
 let celpaq = paquete();
 
+
+
 //Se usa un while por si no pone nada en nombre.
 function nombre() {
     (alert("Bienvenido a telefonia Sayayin"));
@@ -15,7 +17,10 @@ function nombre() {
         cliente = prompt("Ingrese su nombre y apellido");
     };
     return cliente;
+    
 }
+
+
 //Se usa un while por si no escoge el "1" como opcion.
 function mostrarSaludo() {
      let seleccion = (parseInt(prompt("Hola " + inicio + "," + " ¿Estas listo para escoger tu equipo?" + "\n 1.SI  2.NO")));
@@ -26,12 +31,13 @@ function mostrarSaludo() {
  }
 
  //mostramos info al cliente de nuestros paquetes y celulares
+ // La info de planes y telefonos los hice array para mejor funcionamiento del codigo
 function mensajes(){
-alert("Estos son los telefonos que podemos mostrate con sus costos " + inicio + "\n 1.Iphone 13 $13,000 \n 2.Samsung Galaxy S22 $ 12,000 \n 3.HUAWEI Mate 40 pro $ 10,000 ");    
+const telefonos = ["1.Iphone 13 $13,000\n","2.Samsung Galaxy S22 $12,000\n","3.HUAWEI Mate 40 pro $ 10,000"];
+const planes = ["Plan 1: costo $100/mes\n-100 Minutos \n-100 Mensajes de texto \n-100 MB para que naveges por internet \n", "Plan 2: costo $200/mes\n-200 Minutos \n-200 Mensajes de texto \n-200 MB para que naveges por internet \n","Plan 3: costo $300/mes\n-300 Minutos \n-300 Mensajes de texto \n-300 MB para que naveges por internet"];
+alert("Estos son los telefonos que podemos mostrate con sus costos " + inicio + "\n" + telefonos);    
 alert("A continuacion te mostraremos los diferentes planes y sus costos");
-alert("Plan 1: costo $100/mes\n-100 Minutos \n-100 Mensajes de texto \n-100 MB para que naveges por internet");
-alert("Plan 2: costo $200/mes\n-200 Minutos \n-200 Mensajes de texto \n-200 MB para que naveges por internet");
-alert("Plan 3: costo $300/mes\n-300 Minutos \n-300 Mensajes de texto \n-300 MB para que naveges por internet");
+alert(planes);
  }
 
 
@@ -92,3 +98,9 @@ let plan3 = 300
        alert("Hasta la proxima guerrero Sayayin");
     }
   }
+
+
+  //agrege este Array para utilizar la funcion de push
+const nombreCliente = [];
+nombreCliente.push(inicio);
+console.log (nombreCliente);
