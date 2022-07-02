@@ -30,11 +30,42 @@ function mostrarSaludo() {
       }
  }
 
+//objetos que seria mis celulares tendria la marca, modelo, y precio.
+
+class celulares{
+   constructor (marca, modelo, precio){
+      this.marca = marca;
+      this.modelo = modelo;
+      this.precio = precio;
+   }
+}
+
+const telefonos =[
+   { id: 1, marca: "Iphone", modelo: "13", precio: "13,000" },
+   { id: 2, marca: "Samsung", modelo: "Galaxy S22", precio: "12,000" },
+   { id: 3, marca: "HUAEAI", modelo: "Mate 40 pro", precio: "10,000"},
+];
+
+class planes{
+   constructor(plan, costo, minutos, megas){
+      this.plan = plan;
+      this.costo = costo;
+      this.minutos = minutos;
+      this.megas = megas;
+   }
+}
+
+const planes =[
+   { id:1, plan:1, costo: "$100", minutos: 100, megas: 100},
+   { id:2, plan:2, costo: "$200", minutos: 200, megas: 200},
+   { id:3, plan:3, costo: "$300", minutos: 300, megas: 300},
+];
+
  //mostramos info al cliente de nuestros paquetes y celulares
  // La info de planes y telefonos los hice array para mejor funcionamiento del codigo
 function mensajes(){
 const telefonos = ["1.Iphone 13 $13,000\n","2.Samsung Galaxy S22 $12,000\n","3.HUAWEI Mate 40 pro $ 10,000"];
-const planes = ["Plan 1: costo $100/mes\n-100 Minutos \n-100 Mensajes de texto \n-100 MB para que naveges por internet \n", "Plan 2: costo $200/mes\n-200 Minutos \n-200 Mensajes de texto \n-200 MB para que naveges por internet \n","Plan 3: costo $300/mes\n-300 Minutos \n-300 Mensajes de texto \n-300 MB para que naveges por internet"];
+const planes = ["Plan 1: costo $100/mes\n-100 Minutos \n-100 Mensajes de texto \n-100 MB para que naveges por internet \n", "Plan 2: costo $200/mes\n-200 Minutos \n-200 Mensajes de texto \n-200 MB para que naveges por internet \n","Plan 3: costo $300/mes\n-300 Minutos \n-300 Mensajes de texto \n-300 MB para que naveges por internet"];   
 alert("Estos son los telefonos que podemos mostrate con sus costos " + inicio + "\n" + telefonos);    
 alert("A continuacion te mostraremos los diferentes planes y sus costos");
 alert(planes);
