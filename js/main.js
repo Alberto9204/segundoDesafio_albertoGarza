@@ -30,36 +30,6 @@ function mostrarSaludo() {
       }
  }
 
-//objetos que seria mis celulares tendria la marca, modelo, y precio.
-
-class celulares{
-   constructor (marca, modelo, precio){
-      this.marca = marca;
-      this.modelo = modelo;
-      this.precio = precio;
-   }
-}
-
-const telefonos =[
-   { id: 1, marca: "Iphone", modelo: "13", precio: "13,000" },
-   { id: 2, marca: "Samsung", modelo: "Galaxy S22", precio: "12,000" },
-   { id: 3, marca: "HUAEAI", modelo: "Mate 40 pro", precio: "10,000"},
-];
-
-class planes{
-   constructor(plan, costo, minutos, megas){
-      this.plan = plan;
-      this.costo = costo;
-      this.minutos = minutos;
-      this.megas = megas;
-   }
-}
-
-const planes =[
-   { id:1, plan:1, costo: "$100", minutos: 100, megas: 100},
-   { id:2, plan:2, costo: "$200", minutos: 200, megas: 200},
-   { id:3, plan:3, costo: "$300", minutos: 300, megas: 300},
-];
 
  //mostramos info al cliente de nuestros paquetes y celulares
  // La info de planes y telefonos los hice array para mejor funcionamiento del codigo
@@ -135,3 +105,53 @@ let plan3 = 300
 const nombreCliente = [];
 nombreCliente.push(inicio);
 console.log (nombreCliente);
+
+
+//objetos que seria mis celulares tendria la marca, modelo, y precio.
+class celulares{
+   constructor (marca, modelo, precio){
+      this.marca = marca;
+      this.modelo = modelo;
+      this.precio = precio;
+   }
+}
+
+const telefonos =[
+   { id: 1, marca: "Iphone", modelo: "13", precio: "13,000" },
+   { id: 2, marca: "Samsung", modelo: "Galaxy S22", precio: "12,000" },
+   { id: 3, marca: "HUAEAI", modelo: "Mate 40 pro", precio: "10,000"},
+];
+
+class planes{
+   constructor(plan, costo, minutos, megas){
+      this.plan = plan;
+      this.costo = costo;
+      this.minutos = minutos;
+      this.megas = megas;
+   }
+}
+
+const plane =[
+   { id:1, plan:1, costo: "$100", minutos: 100, megas: 100},
+   { id:2, plan:2, costo: "$200", minutos: 200, megas: 200},
+   { id:3, plan:3, costo: "$300", minutos: 300, megas: 300},
+];
+
+//Mi interraccion con el dom 
+let primerPlan = document.getElementById("primerPlan");
+primerPlan.innerHTML = "100 Minutos \n-100 Mensajes de texto \n-100 MB para que naveges por internet";
+
+let segundoPlan = document.getElementById("segundoPlan");
+segundoPlan.innerHTML = "200 Minutos \n-200 Mensajes de texto \n-200 MB para que naveges por internet \n";
+
+let tercerPlan = document.getElementById("tercerPlan");
+tercerPlan.innerHTML = "300 Minutos \n-300 Mensajes de texto \n-300 MB para que naveges por internet";
+
+let costoPlan1 = document.getElementById("costoPlan1");
+costoPlan1.innerHTML = "Costo $100/mes";
+
+let costoPlan2 = document.getElementById("costoPlan2");
+costoPlan2.innerHTML = "Costo $200/mes";
+
+let costoPlan3 = document.getElementById("costoPlan3");
+costoPlan3.innerHTML = "Costo $300/mes";
