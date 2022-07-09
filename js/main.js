@@ -155,3 +155,24 @@ costoPlan2.innerHTML = "Costo $200/mes";
 
 let costoPlan3 = document.getElementById("costoPlan3");
 costoPlan3.innerHTML = "Costo $300/mes";
+
+//agregamos eventos cada card
+let btn = document.getElementById("btn");
+btn.addEventListener("click", respuestaClick);
+function respuestaClick (){
+   alert("Escogiste el iphone")
+};
+
+let botonSamsung = document.getElementById("btn1");
+botonSamsung.addEventListener("click", respuestaClick2);
+function respuestaClick2 (){
+   alert("Escogiste el Samsung")
+};
+
+let botonHuawei = document.getElementById("btn2");
+botonHuawei.addEventListener("click", respuestaClick3);
+function respuestaClick3 (){
+   alert("Escogiste el huawei")
+};
+
+
